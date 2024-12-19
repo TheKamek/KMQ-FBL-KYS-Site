@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KYS - Keep Your Storage | Secure Cloud Storage Solution</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .burgundy-gradient {
+        background: linear-gradient(135deg, #800020 0%, #4a0011 100%);
+      }
+      .hover-scale {
+        transition: transform 0.3s ease;
+      }
+      .hover-scale:hover {
+        transform: scale(1.05);
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.6s ease forwards;
+      }
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease;
+      }
+      .scroll-reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 border-b border-gray-800">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center space-x-2">
+            <svg
+              class="h-8 w-8 text-red-900"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
+              />
+            </svg>
+            <span class="text-2xl font-bold text-red-900">KYS</span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#features"
+              class="text-gray-300 hover:text-red-900 transition-colors"
+              >Features</a
+            >
+            <a
+              href="#security"
+              class="text-gray-300 hover:text-red-900 transition-colors"
+              >Security</a
+            >
+            <a
+              href="#pricing"
+              class="text-gray-300 hover:text-red-900 transition-colors"
+              >Pricing</a
+            >
+            <a
+              href="#login"
+              class="text-gray-300 hover:text-red-900 transition-colors"
+              >Login</a
+            >
+            <a
+              href="#signup"
+              class="bg-red-900 text-white px-6 py-2 rounded-md hover:bg-red-800 transition-colors animate-pulse"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="burgundy-gradient">
+      <div class="max-w-7xl mx-auto px-4 py-20">
+        <div class="text-center animate-fade-in-up">
+          <h1 class="text-5xl md:text-6xl font-bold mb-8">
+            Your Secrets,
+            <span class="block text-red-900">Your Control</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
+            Enter the vault of digital security. Where your files remain yours,
+            protected by military-grade encryption and accessible only to you.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="#signup"
+              class="px-8 py-4 bg-red-900 rounded-lg hover:bg-red-800 transition-colors text-lg font-semibold hover-scale"
+            >
+              Begin Your Journey
+            </a>
+            <a
+              href="#demo"
+              class="px-8 py-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors text-lg font-semibold hover-scale"
+            >
+              Watch Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="py-20 bg-gray-900" id="features">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16 scroll-reveal">
+          Unlock Premium Features
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 p-8 rounded-lg hover-scale scroll-reveal">
+            <div
+              class="flex items-center justify-center h-16 w-16 rounded-full bg-red-900 mb-6"
+            >
+              <svg
+                class="h-8 w-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Quantum Encryption</h3>
+            <p class="text-gray-400">
+              State-of-the-art encryption that evolves with emerging threats,
+              keeping your data impenetrable.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg hover-scale scroll-reveal">
+            <div
+              class="flex items-center justify-center h-16 w-16 rounded-full bg-red-900 mb-6"
+            >
+              <svg
+                class="h-8 w-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Infinite Vault</h3>
+            <p class="text-gray-400">
+              Boundless storage capacity that grows with your needs, never
+              compromise on space again.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg hover-scale scroll-reveal">
+            <div
+              class="flex items-center justify-center h-16 w-16 rounded-full bg-red-900 mb-6"
+            >
+              <svg
+                class="h-8 w-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Time Capsule</h3>
+            <p class="text-gray-400">
+              Advanced versioning system that lets you travel back in time,
+              recovering any version of your files.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security Section -->
+    <div class="burgundy-gradient py-20" id="security">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="scroll-reveal">
+            <h2 class="text-4xl font-bold mb-6">Security Beyond Standards</h2>
+            <p class="text-xl text-gray-300 mb-8">
+              We don't just meet industry standards - we set them. Our security
+              protocol combines multiple layers of encryption with advanced
+              threat detection systems.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="h-6 w-6 text-red-900"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>256-bit AES Encryption</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="h-6 w-6 text-red-900"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>Zero-Knowledge Architecture</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="h-6 w-6 text-red-900"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>Biometric Authentication</span>
+              </li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-4 scroll-reveal">
+            <div class="bg-gray-800 p-6 rounded-lg hover-scale">
+              <h3 class="text-xl font-bold mb-2">24/7 Monitoring</h3>
+              <p class="text-gray-400">
+                Constant threat detection and prevention
+              </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg hover-scale">
+              <h3 class="text-xl font-bold mb-2">Secure Sharing</h3>
+              <p class="text-gray-400">End-to-end encrypted file sharing</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg hover-scale">
+              <h3 class="text-xl font-bold mb-2">Data Centers</h3>
+              <p class="text-gray-400">Multiple redundant secure locations</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg hover-scale">
+              <h3 class="text-xl font-bold mb-2">Compliance</h3>
+              <p class="text-gray-400">GDPR, HIPAA, and SOC 2 certified</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-gray-900 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="scroll-reveal">
+            <div class="text-4xl font-bold text-red-900 mb-2">99.99%</div>
+            <div class="text-gray-400">Uptime</div>
+          </div>
+          <div class="scroll-reveal">
+            <div class="text-4xl font-bold text-red-900 mb-2">1M+</div>
+            <div class="text-gray-400">Users</div>
+          </div>
+          <div class="scroll-reveal">
+            <div class="text-4xl font-bold text-red-900 mb-2">5PB</div>
+            <div class="text-gray-400">Data Stored</div>
+          </div>
+          <div class="scroll-reveal">
+            <div class="text-4xl font-bold text-red-900 mb-2">0</div>
+            <div class="text-gray-400">Data Breaches</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="burgundy-gradient py-20">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-8 scroll-reveal">
+          Ready to Secure Your Digital Legacy?
+        </h2>
+        <p class="text-xl text-gray-300 mb-12 scroll-reveal">
+          Join thousands of users who trust KYS with their most valuable data.
+          Start your 30-day free trial today.
+        </p>
+        <a
+          href="#signup"
+          class="inline-block px-12 py-4 bg-red-900 rounded-lg hover:bg-red-800 transition-colors text-lg font-semibold hover-scale scroll-reveal"
+        >
+          Start Free Trial
+        </a>
+      </div>
+    </div>
+    <div class="bg-gray-900 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16 scroll-reveal">
+          Trusted by Industry Leaders
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 p-8 rounded-lg hover-scale scroll-reveal">
+            <div class="flex items-center mb-6">
+              <img
+                src="/api/placeholder/64/64"
+                alt="User"
+                class="rounded-full"
+              />
+              <div class="ml-4">
+                <h4 class="font-bold">Sarah Chen</h4>
+                <p class="text-gray-400">CTO, TechGiant</p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "KYS has revolutionized how we handle sensitive data. The security
+              features are unmatched."
+            </p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg hover-scale scroll-reveal">
+            <div class="flex items-center mb-6">
+              <img
+                src="/api/placeholder/64/64"
+                alt="User"
+                class="rounded-full"
+              />
+              <div class="ml-4">
+                <h4 class="font-bold">Marcus Rodriguez</h4>
+                <p class="text-gray-400">Security Director, CyberShield</p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "The encryption standards and ease of use make KYS the perfect
+              solution for our needs."
+            </p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg hover-scale scroll-reveal">
+            <div class="flex items-center mb-6">
+              <img
+                src="/api/placeholder/64/64"
+                alt="User"
+                class="rounded-full"
+              />
+              <div class="ml-4">
+                <h4 class="font-bold">Emma Thompson</h4>
+                <p class="text-gray-400">CEO, DataVault Inc.</p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "We've never felt more confident about our data security since
+              switching to KYS."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="burgundy-gradient py-20" id="pricing">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16 scroll-reveal">
+          Choose Your Protection Level
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 p-8 rounded-lg hover-scale scroll-reveal">
+            <h3 class="text-2xl font-bold mb-4">Basic</h3>
+            <div class="text-4xl font-bold mb-6">
+              $9.99<span class="text-lg text-gray-400">/mo</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                100GB Storage
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Basic Encryption
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Email Support
+              </li>
+            </ul>
+            <a
+              href="#signup"
+              class="block text-center py-3 px-6 bg-red-900 rounded-lg hover:bg-red-800 transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+          <div
+            class="bg-gray-900 p-8 rounded-lg hover-scale scroll-reveal transform scale-105 border-2 border-red-900"
+          >
+            <div
+              class="absolute top-0 right-0 bg-red-900 px-3 py-1 rounded-bl-lg"
+            >
+              Popular
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Professional</h3>
+            <div class="text-4xl font-bold mb-6">
+              $24.99<span class="text-lg text-gray-400">/mo</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                1TB Storage
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Advanced Encryption
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                24/7 Support
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                File Versioning
+              </li>
+            </ul>
+            <a
+              href="#signup"
+              class="block text-center py-3 px-6 bg-red-900 rounded-lg hover:bg-red-800 transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+          <div class="bg-gray-900 p-8 rounded-lg hover-scale scroll-reveal">
+            <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+            <div class="text-4xl font-bold mb-6">Custom</div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Unlimited Storage
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Custom Security
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Dedicated Support
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-red-900 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                API Access
+              </li>
+            </ul>
+            <a
+              href="#contact"
+              class="block text-center py-3 px-6 bg-red-900 rounded-lg hover:bg-red-800 transition-colors"
+            >
+              Contact Sales
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto py-12 px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-white font-bold mb-4">Company</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#careers"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#press"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Press</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#blog"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#help"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#guides"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Guides</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Legal</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#privacy"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#terms"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#security"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Security</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Connect</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#twitter"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#github"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#linkedin"
+                  class="text-gray-400 hover:text-red-900 transition-colors"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2">
+              <svg
+                class="h-8 w-8 text-red-900"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
+                />
+              </svg>
+              <span class="text-2xl font-bold text-red-900">KYS</span>
+            </div>
+            <p class="text-gray-400 mt-4 md:mt-0">
+              © 2024 Keep Your Storage. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button
+      id="scrollToTop"
+      class="fixed bottom-8 right-8 bg-red-900 p-3 rounded-full shadow-lg hidden hover:bg-red-800 transition-colors"
+    >
+      <svg
+        class="h-6 w-6 text-white"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+      // Scroll reveal animation
+      function revealOnScroll() {
+        const elements = document.querySelectorAll('.scroll-reveal');
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementTop < windowHeight - 100) {
+            element.classList.add('active');
+          }
+        });
+      }
+
+      // Scroll to top functionality
+      function toggleScrollButton() {
+        const button = document.getElementById('scrollToTop');
+        if (window.scrollY > 500) {
+          button.classList.remove('hidden');
+        } else {
+          button.classList.add('hidden');
+        }
+      }
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        });
+      });
+
+      // Scroll to top button click handler
+      document.getElementById('scrollToTop').addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      });
+
+      // Initialize animations
+      window.addEventListener('scroll', () => {
+        revealOnScroll();
+        toggleScrollButton();
+      });
+
+      // Trigger initial reveal
+      revealOnScroll();
+
+      // Add hover animation for feature cards
+      document.querySelectorAll('.hover-scale').forEach((card) => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'scale(1.05)';
+          card.style.transition = 'transform 0.3s ease';
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'scale(1)';
+        });
+      });
+    </script>
+  </body>
+</html>
